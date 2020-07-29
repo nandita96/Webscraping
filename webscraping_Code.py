@@ -47,13 +47,3 @@ def convert_csv_to_joson():
         
 convert_csv_to_joson()
 
-"""
-myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-mydb = myclient["mydata"]
-collection_data = mydb["industry_statistics"]
-with open('E:\Semester 1\Database and Analytics Programming\Project\Datasets\masterlist2.0.json','r',encoding='utf-8') as f:
-    for line1 in f:
-        line1 = json.loads(line1.strip())
-        collection_data.insert_one(line1)
-        myclient.close()
-"""
